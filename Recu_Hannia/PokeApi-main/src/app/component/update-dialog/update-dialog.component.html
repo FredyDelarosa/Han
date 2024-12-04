@@ -1,0 +1,38 @@
+<h1 mat-dialog-title>Update Pokémon</h1>
+<div mat-dialog-content>
+  <form [formGroup]="pokemonForm">
+    <!-- Input: Name -->
+    <mat-form-field appearance="outline">
+      <mat-label>Name</mat-label>
+      <input matInput formControlName="name" />
+      <mat-error *ngIf="pokemonForm.get('name')?.hasError('required')">
+        Name is required
+      </mat-error>
+    </mat-form-field>
+
+    <!-- Input: Type -->
+    <mat-form-field appearance="outline">
+      <mat-label>Type (comma separated)</mat-label>
+      <input matInput formControlName="type" />
+      <mat-error *ngIf="pokemonForm.get('type')?.hasError('required')">
+        Type is required
+      </mat-error>
+    </mat-form-field>
+
+    <!-- Input: Generation -->
+    <mat-form-field appearance="outline">
+      <mat-label>Generation</mat-label>
+      <input matInput type="number" formControlName="generation" />
+      <mat-error *ngIf="pokemonForm.get('generation')?.hasError('required')">
+        Generation is required
+      </mat-error>
+      <mat-error *ngIf="pokemonForm.get('generation')?.hasError('min')">
+        Generation must be greater than 0
+      </mat-error>
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-raised-button color="accent" [disabled]="!pokemonForm.valid" (click)="onSave()">Save</button>
+</div>

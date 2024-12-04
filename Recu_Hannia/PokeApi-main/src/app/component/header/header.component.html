@@ -1,0 +1,11 @@
+<header>
+  <h1 (click)="navigateToHome()">POKEMON</h1>
+  <div class="header-actions">
+    <button mat-raised-button color="primary" (click)="navigateToMyPokemons()">Mis Pokemones</button>
+    <div class="pokedex-container">
+      <a (click)="onPokedexClick()">
+        <img src="POKE.png" alt="Pokédex" class="pokedex-image" />
+      </a>
+    </div>
+  </div>
+</header>

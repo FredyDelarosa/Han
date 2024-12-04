@@ -1,0 +1,49 @@
+/* Paleta de Pikachu */
+:root {
+  --primary-color: #FFCB05; /* Amarillo */
+  --secondary-color: #2A2A2A; /* Negro */
+  --accent-color: #D62828; /* Rojo */
+  --background-color: #FFF7D1; /* Amarillo claro para fondo */
+  --text-color: #2A2A2A; /* Texto negro */
+}
+
+/* Fondo Global */
+body {
+  background-color: var(--background-color); /* Fondo amarillo claro */
+  color: var(--text-color); /* Texto negro */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+}
+
+.mat-elevation-z8 {
+  border-radius: 8px; /* Bordes redondeados para las tablas */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--secondary-color); /* Negro */
+}
+
+p, li {
+  color: var(--text-color); /* Negro */
+}
+
+a {
+  color: var(--accent-color); /* Rojo */
+  text-decoration: none;
+}
+
+/* Botones */
+button {
+  background-color: var(--primary-color); /* Amarillo */
+  color: var(--secondary-color); /* Negro */
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #F2B600; /* Amarillo oscuro */
+  }
+}

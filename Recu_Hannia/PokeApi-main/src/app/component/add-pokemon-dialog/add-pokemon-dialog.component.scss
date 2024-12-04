@@ -1,0 +1,17 @@
+mat-dialog-content {
+  display: flex;
+  flex-direction: column; // Organiza elementos verticalmente
+  gap: 16px; // Espaciado uniforme entre los inputs
+  padding: 16px 0;
+
+  mat-form-field {
+    width: 100%; // Asegura que cada input ocupe todo el ancho disponible
+  }
+}
+
+mat-dialog-actions {
+  display: flex;
+  justify-content: flex-end; // Botones alineados a la derecha
+  gap: 8px; // Espaciado entre botones
+  margin-top: 16px;
+}

@@ -1,0 +1,36 @@
+.table-wrapper {
+  margin: 40px auto; /* Centramos la tabla en la pantalla */
+  padding: 20px; /* Espaciado interno */
+  max-width: 800px; /* Ancho máximo de la tabla */
+  border: 2px solid var(--secondary-color); /* Borde negro */
+  border-radius: 8px; /* Bordes redondeados */
+  background-color: #FFF; /* Fondo blanco */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Tabla */
+mat-table {
+  width: 100%; /* La tabla ocupa el ancho completo del contenedor */
+  border-radius: 4px;
+}
+
+/* Filas y Cabecera */
+mat-header-row {
+  background-color: var(--primary-color); /* Amarillo brillante */
+  color: var(--secondary-color); /* Texto negro */
+}
+
+mat-row {
+  &:hover {
+    background-color: rgba(255, 203, 5, 0.1); /* Resaltado suave */
+  }
+}
+
+.favorite-icon {
+  cursor: pointer;
+  color: var(--accent-color); /* Rojo */
+}
+
+.favorite-icon.active {
+  color: #FF6B6B; /* Rojo claro para estado activo */
+}
