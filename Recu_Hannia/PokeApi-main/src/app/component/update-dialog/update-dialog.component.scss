@@ -1,64 +1,59 @@
-// Paleta de colores inspirada en Pikachu y un diseño moderno
-$primary-bg: #fffde7; // Fondo amarillo claro
-$secondary-text: #37474f; // Texto gris oscuro
-$highlight-color: #fdd835; // Amarillo brillante para acentos
-$error-color: #d32f2f; // Rojo fuerte para errores
-$button-bg-cancel: #e0e0e0; // Fondo gris claro para cancelar
-$button-bg-cancel-hover: #bdbdbd; // Hover gris más oscuro
+$primary-bg: #fffde7; 
+$secondary-text: #37474f; 
+$highlight-color: #fdd835; 
+$error-color: #d32f2f; 
+$button-bg-cancel: #e0e0e0; 
+$button-bg-cancel-hover: #bdbdbd; 
 
-// Estilo del contenedor del diálogo
 mat-dialog-content {
   display: flex;
-  flex-direction: column; // Inputs en columna
-  gap: 20px; // Espaciado uniforme
-  padding: 40px; // Espaciado generoso
-  background-color: $primary-bg; // Fondo amarillo claro
-  border-radius: 16px; // Bordes suaves
-  min-width: 520x; // Ancho mínimo para evitar que sea muy estrecho
-  max-width: 600px; // Ancho máximo
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); // Sombra moderna
-  color: $secondary-text; // Texto en gris oscuro
+  flex-direction: column; 
+  gap: 20px; 
+  padding: 80px; 
+  background-color: $primary-bg;
+  border-radius: 16px; 
+  min-width: 550x; 
+  max-width: 600px; 
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); 
+  color: $secondary-text; 
 }
 
-// Estilo del título del diálogo
 mat-dialog-title {
-  font-size: 1.8rem; // Título grande
-  font-weight: bold; // Resaltar
-  color: $secondary-text; // Texto en gris oscuro
-  text-align: center; // Centrado
-  margin-bottom: 24px; // Separación con el contenido
+  font-size: 1.8rem; 
+  font-weight: bold; 
+  color: $secondary-text; 
+  text-align: center; 
+  margin-bottom: 24px; 
 }
 
-// Estilo de los inputs
 mat-form-field {
-  width: 100%; // Los inputs ocupan todo el ancho
-  max-width: 500px; // Limita el ancho máximo
-  background-color: white; // Fondo blanco para contraste
-  border-radius: 8px; // Bordes suaves
-  padding: 4px 8px; // Espaciado interno
-  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.1); // Sombra interna suave
+  width: 100%; 
+  max-width: 500px; 
+  background-color: white; 
+  border-radius: 8px; 
+  padding: 4px 8px; 
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.1); 
 
   mat-label {
-    font-size: 1rem; // Tamaño adecuado para etiquetas
-    color: $secondary-text; // Color gris oscuro
+    font-size: 1rem; 
+    color: $secondary-text;
   }
 
   input {
-    font-size: 1.1rem; // Texto claro y grande
-    padding: 12px; // Espaciado interno para inputs más amplios
+    font-size: 1.1rem; 
+    padding: 12px; 
   }
 
   mat-error {
-    color: $error-color; // Rojo fuerte para errores
-    font-size: 0.85rem; // Tamaño reducido pero legible
-    margin-top: 4px; // Separación mínima
+    color: $error-color;
+    font-size: 0.85rem; 
+    margin-top: 4px; 
   }
 }
 
-// Botones del diálogo
 mat-dialog-actions {
   display: flex;
-  justify-content: space-between; // Botones separados en extremos
+  justify-content: space-between; 
   align-items: center;
   margin-top: 24px;
 
@@ -66,23 +61,23 @@ mat-dialog-actions {
     font-size: 1rem;
     font-weight: 600;
     border-radius: 8px;
-    padding: 10px 20px; // Botones grandes y fáciles de usar
+    padding: 10px 20px; 
 
     &:first-child {
-      background-color: $button-bg-cancel; // Fondo gris claro
-      color: $secondary-text; // Texto gris oscuro
+      background-color: $button-bg-cancel; 
+      color: $secondary-text; 
 
       &:hover {
-        background-color: $button-bg-cancel-hover; // Hover gris más oscuro
+        background-color: $button-bg-cancel-hover; 
       }
     }
 
     &:last-child {
-      background-color: $highlight-color; // Fondo amarillo brillante
+      background-color: $highlight-color;
       color: white;
 
       &:hover {
-        background-color: darken($highlight-color, 10%); // Hover amarillo oscuro
+        background-color: darken($highlight-color, 10%); 
       }
     }
   }
